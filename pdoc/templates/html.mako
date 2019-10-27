@@ -67,7 +67,7 @@
 
     extensions = []
     if use_pygments:
-      extensions = ['markdown.extensions.codehilite(linenums=False)']
+      extensions = ['markdown.extensions.codehilite']
     s = markdown.markdown(s.strip(), extensions=extensions)
     return s
 
